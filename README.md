@@ -49,7 +49,7 @@ And use a media query for each group of classes that need to be made responsive.
 	
 	
 #####5. Prefer margin-top over margin-bottom, and margin-left over margin-right, for creating space between blocks
-IE plays nicer with :first-child.
+IE7 and IE8 play nicer with :first-child.
 	
 	.button_index > li {
 		margin-top: 1em;
