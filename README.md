@@ -1,16 +1,16 @@
-###CSS styleguide
+##CSS styleguide
 	
-	/* 1. Use classes to style, never ids. This is key to
-	      writing modular CSS. */
+#####1. Use classes to style, never ids
+This is key to writing modular CSS.
 	
+
 	.button {
 	  border-radius: 0.5em;
 	}
 	
 	
-	/* 2. Extend classes by prefixing, using an underscore to
-	      denote a class extension, and group extended classes
-	      and base classes together. */
+#####2. Extend classes by prefixing, using an underscore to extend the class
+Group base and extended classes together in your code.
 	
 	.button {
 		border-radius: 0.5em;
@@ -21,9 +21,8 @@
 	}
 	
 	
-	/* 3. Put media queries in mobile first order, and use
-	      a media query for each class that needs to be made
-	      responsive, keeping them close together in the code. */
+#####3. Put media queries in mobile first order
+And use a media query for each group of classes that need to be made responsive.
 	
 	.button {
 		border-radius: 0.5em;
@@ -40,7 +39,7 @@
 	}
 	
 	
-	/* 4. Use child selectors to set positions and layouts. */
+#####4. Use child selectors to set positions and layouts that depend on context
 	
 	.site_wrap > .logo_thumb {
 		position: absolute;
@@ -49,8 +48,7 @@
 	}
 	
 	
-	/* 5. Prefer margin-top over margin-bottom, and margin-left
-	      over margin-right, for creating space between blocks. */
+#####5. Prefer margin-top over margin-bottom, and margin-left over margin-right, for creating space between blocks
 	
 	.button_index > li {
 		margin-top: 1em;
@@ -61,7 +59,7 @@
 	}
 	
 	
-	/* 6. Namespace typography. */
+#####6. Namespace typography
 	
 	.typo1 {
 		font-size: 0.9375rem; /* 15px */
@@ -87,5 +85,5 @@
 	}
 	
 	
-	/* 7. Put all hacks in a separate stylesheet, hacks.css. In
-	      hacks.css you can break the rules. */
+#####7. Put all hacks in a separate stylesheet, hacks.css
+In hacks.css you can break the rules.
