@@ -1,4 +1,4 @@
-##CSS styleguide
+##Cruncher CSS style
 	
 #####1. Use classes to style, never ids
 This is key to writing modular CSS.
