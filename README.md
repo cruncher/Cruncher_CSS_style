@@ -1,7 +1,7 @@
 ##Cruncher CSS style
 	
-#####1. Use classes to style, never ids
-This is key to writing modular CSS.
+#####1. Use classes to style, never IDs
+Classes are reusable. IDs, not so much.
 	
 
 	.button {
