@@ -39,7 +39,7 @@ And use a media query for each group of classes that need to be made responsive.
 	}
 	
 	
-#####4. Use child selectors to set positions and layouts that depend on context
+#####4. Use context to modify layout. Be specific. Use child selectors and next sibling selectors to define the contexts in which layout changes.
 	
 	.site_wrap > .logo_thumb {
 		position: absolute;
