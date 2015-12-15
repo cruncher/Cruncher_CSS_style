@@ -5,7 +5,7 @@ Classes are reusable. IDs, not so much.
 	
 
 	.button {
-		border-radius: 0.5em;
+		border-radius: 0.5rem;
 	}
 	
 	
@@ -13,7 +13,7 @@ Classes are reusable. IDs, not so much.
 Group base and extended classes together in your code.
 	
 	.button {
-		border-radius: 0.5em;
+		border-radius: 0.5rem;
 	}
 	
 	.action-button {
@@ -25,7 +25,7 @@ Group base and extended classes together in your code.
 And use a media query for each group of classes that need to be made responsive.
 	
 	.button {
-		border-radius: 0.5em;
+		border-radius: 0.5rem;
 	}
 	
 	.action-button {
@@ -39,20 +39,27 @@ And use a media query for each group of classes that need to be made responsive.
 	}
 	
 	
-#####4. Use context to modify layout. Be specific. Use child selectors and next sibling selectors to define the contexts in which layout changes.
-	
+#####4. Use context to modify layout
+Be specific. Use child selectors to define positioning in specific contexts.
+
 	.site-wrap > .logo-thumb {
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
+
+Use next sibling selectors to define space between elements.
+
+	.logo-thumb + .button {
+		margin-top: 1rem;
+	}
 	
 #####5. Prefer margin-top over margin-bottom, and margin-left over margin-right, for creating space between blocks
-Top and bottom margins of blocks collapse – <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">although not in all cases</a>. Left and right margins do not. Following this rule provides consistency. Break the rule only when you really know what you're doing.
+Top and bottom margins of blocks collapse (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">except when they don't</a>). Left and right margins do not. Following this rule provides consistency. Break the rule only when you really know what you're doing.
 
 	/* Create space between items in a button index. */
 	.button-index > li + li {
-		margin-top: 1em;
+		margin-top: 1rem;
 	}
 	
 #####6. Use past participles to name state (or modifier) classes.
