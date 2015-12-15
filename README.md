@@ -9,14 +9,14 @@ Classes are reusable. IDs, not so much.
 	}
 	
 	
-#####2. Extend classes by prefixing, using an underscore to extend the class
+#####2. Extend classes by prefixing, using a dash to extend the class
 Group base and extended classes together in your code.
 	
 	.button {
 		border-radius: 0.5em;
 	}
 	
-	.action_button {
+	.action-button {
 		display: block;
 	}
 	
@@ -28,7 +28,7 @@ And use a media query for each group of classes that need to be made responsive.
 		border-radius: 0.5em;
 	}
 	
-	.action_button {
+	.action-button {
 		display: block;
 	}
 	
@@ -41,50 +41,40 @@ And use a media query for each group of classes that need to be made responsive.
 	
 #####4. Use context to modify layout. Be specific. Use child selectors and next sibling selectors to define the contexts in which layout changes.
 	
-	.site_wrap > .logo_thumb {
+	.site-wrap > .logo-thumb {
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
 	
-	
 #####5. Prefer margin-top over margin-bottom, and margin-left over margin-right, for creating space between blocks
 IE7 and IE8 play nicer with :first-child than with :last-child.
 	
-	.button_index > li {
+	.button-index > li {
 		margin-top: 1em;
 	}
 	
-	.button_index > li:first-child {
+	.button-index > li:first-child {
 		margin-top: 0;
 	}
 	
-	
-#####6. Namespace typography
-	
-	.typo1 {
-		font-size: 0.9375rem; /* 15px */
-		line-height: 1.4em;   /* 21px */
+#####6. Use past participle for state (or modifier) classes.
+
+	.hidden
+	.selected
+	.highlighted
+
+Usually modifier classes should have no style of their own. Style is applied in conjunction with an object class:
+
+	.button.selected {
+		background-color: green;
 	}
-	
-	.typo1 h1,
-	.typo1 h2,
-	.typo1 h3 {
-		font-weight: bold;
+
+There are exceptions. For example, <code>.hidden</code> should likely force an element to be hidden:
+
+	.hidden {
+		display: none !important;
 	}
-	
-	.typo1 p {
-		margin-top: 0.6em;    /* 9px */
-	}
-	
-	.typo1 h1:first-child,
-	.typo1 h2:first-child,
-	.typo1 h3:first-child,
-	.typo1 p:first-child {
-		/* Remove margin-top from first children of typo block. */ 
-		margin-top: 0;
-	}
-	
-	
+
 #####7. Put all hacks in a separate stylesheet, hacks.css
 In hacks.css you can break the rules.
