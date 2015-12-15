@@ -50,15 +50,12 @@ And use a media query for each group of classes that need to be made responsive.
 #####5. Prefer margin-top over margin-bottom, and margin-left over margin-right, for creating space between blocks
 Top and bottom margins of blocks collapse – <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing">although not in all cases</a>. Left and right margins do not. Following this rule provides consistency. Break the rule only when you really know what you're doing.
 
-	.button-index > li {
+	/* Create space between items in a button index. */
+	.button-index > li + li {
 		margin-top: 1em;
 	}
 	
-	.button-index > li:first-child {
-		margin-top: 0;
-	}
-	
-#####6. Use past participle for state (or modifier) classes.
+#####6. Use past participle for state (or modifier) class names.
 
 	.hidden
 	.selected
