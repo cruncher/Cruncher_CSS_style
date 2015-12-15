@@ -55,7 +55,7 @@ Top and bottom margins of blocks collapse – <a href="https://developer.mozilla
 		margin-top: 1em;
 	}
 	
-#####6. Use past participle for state (or modifier) class names.
+#####6. Use past participles to name state (or modifier) classes.
 
 	.hidden
 	.selected
