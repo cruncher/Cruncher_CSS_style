@@ -48,8 +48,8 @@ And use a media query for each group of classes that need to be made responsive.
 	}
 	
 #####5. Prefer margin-top over margin-bottom, and margin-left over margin-right, for creating space between blocks
-IE7 and IE8 play nicer with :first-child than with :last-child.
-	
+Top and bottom margins of blocks collapse. Left and right margins do not. Following this rule gives some consistency. Break the rule when you really know what you're doing.
+
 	.button-index > li {
 		margin-top: 1em;
 	}
